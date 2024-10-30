@@ -29,9 +29,9 @@ export default function About() {
         />
         </div>
         <p className='about-dis'>
-          " Passionate Web Developer skilled in creating responsive, dynamic, and user-friendly websites. 
+        &quot; Passionate Web Developer skilled in creating responsive, dynamic, and user-friendly websites. 
           With a strong foundation in HTML, CSS, JavaScript, and modern frameworks, I specialize in turning 
-          creative ideas into functional, visually appealing web applications."
+          creative ideas into functional, visually appealing web applications.&quot;
         </p>
           <button>Hire Me</button>
       </div>

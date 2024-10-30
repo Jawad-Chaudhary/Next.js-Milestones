@@ -9,7 +9,7 @@ export default function Hero() {
       <div className='left'>
         <div className='intro'>
           Hi <br />
-          <span className='intro-i'>I'm</span> <span className='intro-name'>Muhammad Jawad </span> <br />
+          <span className='intro-i'>I&apos;m</span> <span className='intro-name'>Muhammad Jawad </span> <br />
            a<Typewriter
           options={{
             strings: ['WEB DEVELOPER', 'UI/UX SPECIALIST' ,'SEO EXPERT'],
@@ -19,9 +19,9 @@ export default function Hero() {
         />
         </div>
         <p className='dis'>
-          " Passionate Web Developer skilled in creating responsive, dynamic, and user-friendly websites. 
+        &quot; Passionate Web Developer skilled in creating responsive, dynamic, and user-friendly websites. 
           With a strong foundation in HTML, CSS, JavaScript, and modern frameworks, I specialize in turning 
-          creative ideas into functional, visually appealing web applications."
+          creative ideas into functional, visually appealing web applications.&quot;
         </p>
           <button>Hire Me</button>
       </div>
