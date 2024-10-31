@@ -1,4 +1,7 @@
 .project {
+
+  background-image: linear-gradient( white,rgb(224, 243, 208) ,rgb(216, 212, 212));
+
   height: 700px;
   width: 100%;
   display: flex;
@@ -16,6 +19,10 @@
   text-shadow: 1px 2px 10px rgba(50, 211, 50,0.55);
   text-shadow: 1px 2pxx 5px rgba(50, 211, 50,0.55);
   text-shadow: 0px 1px 15px rgba(50, 211, 50,0.55);
+
+  animation: scale linear;
+  animation-timeline: view() ;
+  animation-range: entry 0% cover 50% ;
 }
 .top-project h2 span {
   color: rgb(50, 211, 50);
@@ -34,6 +41,10 @@
   width: 300px; 
   box-shadow: 2px 3px 15px rgba(0, 0, 0,0.35);
   position: relative;
+
+  animation: translateY linear;
+  animation-timeline: view() ;
+  animation-range: entry 0% cover 50% ;
 }
 .project-image {
   position: absolute;

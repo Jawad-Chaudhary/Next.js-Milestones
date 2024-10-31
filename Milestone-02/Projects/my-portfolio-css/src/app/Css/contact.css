@@ -1,4 +1,6 @@
 .contact {
+  background-image: linear-gradient( white,rgb(224, 243, 208) ,rgb(216, 212, 212));
+
   height: 800px;
   width: 100%;
   display: flex;
@@ -11,6 +13,10 @@
   font-weight:bolder;
   transform: skew(-10deg);
   cursor: default;
+
+  animation: translateX linear;
+  animation-timeline: view() ;
+  animation-range: entry 0% cover 50%;
 }
 .contact-head span {
   color: rgb(50, 211, 50);
@@ -31,6 +37,10 @@
   padding: 15px ;
   color: rgb(119, 114, 114);
   width: 100%;
+
+  animation: scale linear;
+  animation-timeline: view() ;
+  animation-range: entry 0% cover 40%;
 }
 .name-input::placeholder, .email-input::placeholder, .num-input::placeholder, .sub-input::placeholder, .cmn-input::placeholder {
   color: rgb(168, 168, 168);

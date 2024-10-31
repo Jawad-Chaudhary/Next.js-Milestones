@@ -11,6 +11,8 @@
   display: flex;
   width: 400px;
   flex-direction: column;
+
+  animation: translateX 1s ease forwards;
 }
 
 .intro {
@@ -65,6 +67,8 @@
   height: auto;
   border-radius: 100%;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.35);
+
+  animation: scale 1s linear forwards;
 }
 @media (max-width: 768px) {
   .hero {

@@ -14,6 +14,8 @@
 /* Header Logo */
 .header-logo {
   font-size: x-large;
+
+  animation: scale 1s ease forwards;
 }
 .header-logo span {
   color: rgb(50, 211, 50);
@@ -26,6 +28,7 @@
 .nav-li {
   display: flex;
   column-gap: 20px;
+  animation: scale 1s ease forwards;
 }
 .nav {
   color: rgb(245, 240, 240);
@@ -40,6 +43,8 @@
 /* Download CV Button */
 .button-cv {
   display: flex;
+
+  animation: scale 1s ease forwards;
 }
 .button-cv button {
   padding: 8px 10px;

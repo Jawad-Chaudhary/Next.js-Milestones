@@ -25,9 +25,9 @@ export default function Projects() {
       attention to detail, and a passion for coding.
       </p>
     </div>
-    <div className="flex flex-wrap gap-y-8 md:gap-y-3 -m-8 px-5">
+    <div className="flex flex-wrap md:justify-center gap-y-8 md:gap-y-3 -m-8 px-6">
       {/* {PROJECTS} */}
-      <div data-aos='flip-up' data-aos-duration='1000' className="lg:w-1/2 lg:gap-10 sm:w-1/2 p-4 drop-shadow-md hover:drop-shadow-lg  cursor-pointer">
+      <div data-aos='flip-up' data-aos-duration='1000' className=" w-full md:w-[500px] lg:gap-10  p-4 drop-shadow-md hover:drop-shadow-lg  cursor-pointer">
         <div className="flex relative">
           <Image
             alt="gallery"
@@ -54,7 +54,7 @@ export default function Projects() {
         </div>
       </div>
       {/* {PROJECTS} */}
-      <div data-aos='flip-up' data-aos-duration='1000' className="lg:w-1/2 sm:w-1/2 p-4 drop-shadow-md hover:drop-shadow-lg cursor-pointer">
+      <div data-aos='flip-up' data-aos-duration='1000' className="w-full md:w-[500px] p-4 drop-shadow-md hover:drop-shadow-lg cursor-pointer">
         <div className="flex relative">
           <Image
             alt="gallery"
@@ -80,7 +80,7 @@ export default function Projects() {
         </div>
       </div>
       {/* {PROJECTS} */}
-      <div data-aos='flip-up' data-aos-duration='1000' className="lg:w-1/2 sm:w-1/2 p-4 drop-shadow-md hover:drop-shadow-lg cursor-pointer">
+      <div data-aos='flip-up' data-aos-duration='1000' className="w-full md:w-[500px] p-4 drop-shadow-md hover:drop-shadow-lg cursor-pointer">
         <div className="flex relative">
           <Image
             alt="gallery"
@@ -106,7 +106,7 @@ export default function Projects() {
         </div>
       </div>
       {/* {PROJECTS} */}
-      <div data-aos='flip-up' data-aos-duration='1000' className="lg:w-1/2 sm:w-1/2 p-4 drop-shadow-md hover:drop-shadow-lg cursor-pointer">
+      <div data-aos='flip-up' data-aos-duration='1000' className="w-full md:w-[500px] p-4 drop-shadow-md hover:drop-shadow-lg cursor-pointer">
         <div className="flex relative">
           <Image
             alt="gallery"

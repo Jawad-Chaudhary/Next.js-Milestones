@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image';
+import { IoCloudDownloadOutline } from 'react-icons/io5';
 import Typewriter from 'typewriter-effect';
 
 export default function About() {
@@ -33,7 +34,9 @@ export default function About() {
           With a strong foundation in HTML, CSS, JavaScript, and modern frameworks, I specialize in turning 
           creative ideas into functional, visually appealing web applications.&quot;
         </p>
-          <button>Hire Me</button>
+          <a href="/cv/CV.pdf">
+            Download CV <IoCloudDownloadOutline className="icon" />
+          </a>
       </div>
 
       
