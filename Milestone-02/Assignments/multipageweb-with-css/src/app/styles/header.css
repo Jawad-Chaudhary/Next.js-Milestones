@@ -1,0 +1,144 @@
+.header {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 130px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+  animation: scale ease 2s;
+}
+.logo-image {
+  width: 80px;
+  height: 80px;
+}
+.logo-name {
+  margin-left: 8px;
+}
+.logo-name h3 {
+  margin: 0;
+  word-spacing: 3px;
+  color: rgb(91, 193, 172);
+  font-weight: bolder;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+.logo-name h3:hover {
+  color: black;
+}
+.logo-name p {
+  margin: 3px;
+  font-size: 10px;
+  font-weight: bolder;
+  color: rgb(167, 165, 165);
+}
+
+
+.nav {
+  flex: 2;
+  display: flex;
+  align-items: center;
+
+  animation: scale ease 2s;
+}
+.link {
+  flex: 1;
+  color: rgb(148, 146, 146);
+  text-decoration: none;
+
+  transition: all 0.25s;
+}
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 3px;
+  color: rgb(91, 193, 172);
+}
+.link-button {
+  flex: 1;
+  text-decoration: none;
+  border: solid 2px black;
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px 0px;
+  transition: all 0.25s;
+}
+.link-button:hover {
+  border: solid 2px rgb(91, 193, 172);
+  background-color: rgb(91, 193, 172);
+  color: white;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+}
+.menu-img {
+  text-shadow: 0 0 5px rgb(91, 193, 172);
+}
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgb(179, 204, 199);
+  padding: 20px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  left: 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  
+  z-index: 99;
+}
+
+.mobile-links a {
+  color: rgb(245, 240, 240);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.mobile-links a:hover {
+  color: rgb(91, 193, 172);
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px rgba(50, 211, 50, 0.5);
+}
+.mob-link-button {
+  text-decoration: none;
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px 0px;
+  transition: all 0.25s;
+  background-color: rgb(91, 193, 172);
+}
+.mob-link-button:hover {
+  background-color: white;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 5px 10px;
+  }
+  .nav {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}

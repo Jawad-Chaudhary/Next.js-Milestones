@@ -1,0 +1,131 @@
+.cause {
+  height: auto;
+  width: 100%;
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cause-head {
+  font-size: 3rem;
+  color: rgb(56, 93, 136);
+
+  animation: translateX ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+.cause-dis{
+  display: flex;
+  column-gap: 25px;
+}
+
+.cause-card {
+  width: 320px;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: all 0.25s;
+
+  animation: scale ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.cause-card:hover {
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+}
+.cause-img {
+  width: 100%;
+  height: 200px;
+}
+.cause-content {
+  padding: 0px 25px;
+}
+.content-head {
+  color: rgb(91, 193, 172);
+  cursor: default;
+}
+.content-dis {
+  color: rgb(150, 147, 147);
+  word-spacing: 1px;
+  text-wrap: pretty;
+  line-height: 25px;
+  cursor: default;
+}
+.content-slider, .content-slider2, .content-slider3 {
+  height: 6px;
+  width: 100%;
+  background-color: rgb(212, 206, 206);
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.content-slider::before, .content-slider2::before, .content-slider3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: rgb(131, 145, 158);
+  width: 70%;
+}
+.content-slider2::before {
+  width: 45%;
+}
+.content-slider3::before {
+  width: 95%;
+}
+
+.cause-fund {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  cursor: default;
+}
+.cause-fund p {
+  margin-top: 5px;
+  color: rgb(109, 122, 134);
+  font-weight: 300;
+  cursor: default;
+}
+.cause-fund p span {
+  color: rgb(109, 122, 134);
+  font-weight: bold;
+}
+.cause-button {
+  text-align: center;
+  padding: 5px 0px;
+  font-size: large;
+  width: 100%;
+  background-color: rgb(109, 122, 134);
+  position: relative;
+  z-index: 0;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.cause-button::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(109, 122, 134);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  z-index: -1;
+  transition: ease 0.25s;
+}
+.cause-button:hover::after {
+  background-color: rgb(91, 193, 172);
+}
+
+@media (max-width: 768px) {
+  .cause-dis {
+   flex-direction: column;
+   column-gap: 0;
+   align-items: center;
+   row-gap: 40px;
+  } 
+  .cause-card {
+    width: 85%;
+  }
+ }

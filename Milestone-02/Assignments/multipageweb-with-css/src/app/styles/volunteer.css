@@ -1,0 +1,193 @@
+.vol {
+  height: 700px;
+  max-width: auto;
+  background-color: rgb(90, 111, 128);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.vol::after {
+  content: "";
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  background-color: rgb(91, 193, 172);
+  bottom: -40px;
+  right: -40px;
+  border-radius: 100%;;
+}
+
+.vol-left{
+  width: auto;
+}
+.vol-left h1 {
+  color: white;
+  text-shadow: 2px 4px 10px rgba(255, 255, 255, 0.30);
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+
+  animation: translateX ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+.vol-form {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 25px;
+}
+.vol-form h2 {
+  font-size: xx-large;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.name-input, .cmn-input, .email-input, .subj-input {
+  background-color: aliceblue;
+  border: none;
+  font-size: medium;
+  margin-bottom: 30px;
+  padding: 15px;
+
+  animation: scale ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.name-input, .subj-input {
+  margin-right: 30px;
+}
+.vol-form input::placeholder, .cmn-input::placeholder {
+  color: rgb(109, 122, 134);
+  letter-spacing: 1px;
+  border: none;
+}
+.vol-form input:focus {
+  color: rgb(109, 122, 134);
+  border: none;
+}
+input[type="file"] {
+  display: none;
+}
+label {
+  display: inline-block;
+  text-transform: capitalize;
+  color: rgb(109, 122, 134);
+  background-color: aliceblue;
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 1px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.up-ic {
+  text-align: center;
+  margin-left: 38px;
+}
+.submit-input-button {
+  text-align: center;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: large;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 45px;
+  background-color: rgb(90, 111, 128);
+  cursor: pointer;
+  transition: ease all 0.45s;
+}
+.submit-input-button:hover {
+  background-color: rgb(91, 193, 172);
+}
+.submit-input-button:active {
+  background-color: rgb(68, 148, 132);
+}
+
+/* RIGHT SIDE */
+
+.vol-right {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.vol-img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
+}
+.vol-img-dis h2 {
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+.vol-img-dis p {
+  color: white;
+  text-wrap: pretty;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+@media (max-width:768px) {
+  .vol {
+    height: auto;
+    column-gap: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+    justify-content: center;
+    padding: 50px 0px;
+    row-gap: 70px;
+  }
+  .vol::after {
+    height: 120px;
+    width: 120px;
+  }
+  .vol-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vol-form {
+    padding: 30px 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vol-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+  .name-input, .cmn-input, .email-input, .subj-input {
+    padding: 15px 15px;
+    width: 80%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  label {
+    width: 80%;
+  }
+  .submit-input-button {
+    padding: 15px;
+  }
+  .vol-img {
+    width: 220px;
+    height: 220px;
+  }
+  .vol-img-dis p {
+    line-height: 25px;
+    font-weight: 300;
+  }
+}
