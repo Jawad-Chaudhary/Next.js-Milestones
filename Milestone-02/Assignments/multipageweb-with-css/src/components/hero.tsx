@@ -36,6 +36,8 @@ export default function Hero() {
                 alt={`Slide ${index + 1}`}
                 layout="fill"
                 objectFit="cover"
+                objectPosition='cover'
+                className='slide-img'
                 quality={100}
               />
             </div>
