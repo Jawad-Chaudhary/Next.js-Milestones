@@ -25,7 +25,7 @@
 
   animation: translateX ease forwards;
   animation-timeline: view();
-  animation-range: entry 0% cover 50%;
+  animation-range: entry 0% cover 55%;
 }
 
 /* Top Right */
@@ -44,7 +44,7 @@
 
   animation: scale ease forwards;
   animation-timeline: view();
-  animation-range: entry 0% cover 50%;
+  animation-range: entry 0% cover 60%;
 }
 .story h2 {
   font-size: xx-large;
@@ -80,7 +80,7 @@
 
   animation: translateX ease forwards;
   animation-timeline: view();
-  animation-range: entry 0% cover 50%;
+  animation-range: entry 0% cover 60%;
 }
 .mission h2 {
   color: rgb(91, 193, 172);
@@ -109,7 +109,7 @@
 
   animation: translateX ease forwards;
   animation-timeline: view();
-  animation-range: entry 0% cover 50%;
+  animation-range: entry 0% cover 60%;
 }
 .number h2 {
   font-size: 45px;
@@ -152,7 +152,7 @@
 
   animation: translateX ease forwards;
   animation-timeline: view();
-  animation-range: entry 0% cover 50%;
+  animation-range: entry 0% cover 55%;
 }
 
 .bottom-right {
@@ -164,7 +164,7 @@
 
   animation: scale ease forwards;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 60%;
 }
 .bottom-right h1 {
   font-size: 2.5rem;
