@@ -9,8 +9,8 @@ import Container from "@/components/Container";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DEVLAB: Discover the Latest in Web Development and AI",
-  description: "Welcome to our web development and AI blog, where we share our insights, opinions, and best practices on web development and AI. Here you will find articles on various topics, such as web design, web development, web security, web performance, AI, machine learning, deep learning, and more. Whether you are a web developer, a web designer, or a web enthusiast, you will find something interesting and valuable on our blog. Check out our latest posts and subscribe to our newsletter to stay updated.",
+  title: "Jawad's Journeys: Explore. Learn. Inspire.",
+  description: "Welcome to Jawad's Journeys, where every post is a compass pointing to new horizons. Here, I share my adventures—whether trekking distant trails, navigating life's lessons, or uncovering hidden stories in everyday moments. Through vivid storytelling and candid reflections, this blog is a launchpad to explore the world, learn from its wonders, and inspire curiosity in others. Join me as we turn pages on maps, minds, and hearts—one journey at a time.",
 };
 
 export default function RootLayout({
