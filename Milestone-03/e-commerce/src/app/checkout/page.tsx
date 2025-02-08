@@ -5,7 +5,7 @@ import { useCart } from "@/app/context/CartContext";
 import { useEffect, useState } from "react";
 
 export default function Checkout() {
-  const { cart, removeFromCart} = useCart();
+  const { cart} = useCart();
   const [isMounted, setIsMounted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);

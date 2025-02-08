@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { Shop } from "./item"
 import Link from "next/link"
-import { product } from "./product"
 
 export default function Hero() {
   return (

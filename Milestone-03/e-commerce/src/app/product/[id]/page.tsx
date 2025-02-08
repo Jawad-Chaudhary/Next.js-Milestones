@@ -1,21 +1,30 @@
 import HeaderPage from "@/components/header-page";
 import ClientProductDetails from "@/components/shop/ClientProductDetails";
-import Increment from "@/components/shop/ClientProductDetails";
 import { asgaard } from "@/components/shop/item";
 import { product } from "@/components/shop/product";
 import Image from "next/image";
 import Link from "next/link";
 
-// Generate static paths dynamically
-export async function generateStaticParams() {
-  return product.map((item) => ({
-    id: item.id.toString(),
-  }));
-}
+
+
 
 // Product Page Component
-export default function ProductPage({ params }: { params: { id: string } }) {
-  const item = product.find((product) => product.id.toString() === params.id);
+export default async function ProductPage({
+  params
+}: {
+  params: Promise < {id: string} >
+}) {
+
+  // Await params to extract the id once
+  const { id } = await params;
+  
+  // Use a synchronous callback in find
+  const item = product.find(product => product.id === id);
+  
+  // Ensure the price is a number
+  if (item && typeof item.price === 'string') {
+    item.price = parseFloat(item.price);
+  }
 
   if (!item) {
     return <div>Product not found</div>;

@@ -16,7 +16,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>', // Modified format
-      to: body.email,
+      to: "uasif412@gmail.com",
       subject: `Order Confirmation (#${body.orderId})`,
       react: OrderConfirmation({
         orderId: body.orderId,

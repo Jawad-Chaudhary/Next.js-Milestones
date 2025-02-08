@@ -3,7 +3,16 @@
 import { useState } from "react";
 import { useCart } from "@/app/context/CartContext";
 
-export default function ClientProductDetails({ item }: { item: any }) {
+export interface IItem{
+  id: string;
+  name: string;
+  price: number;
+  description: string;
+  img: string;
+}
+
+
+export default function ClientProductDetails({ item }: { item: IItem }) {
   const [count, setCount] = useState(1);
   const { addToCart } = useCart();
 
